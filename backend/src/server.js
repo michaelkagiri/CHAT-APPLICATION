@@ -1,7 +1,6 @@
 import express from "express";
 import authRouter from "../routes/auth.route.js";
 import dotenv from "dotenv";
-import { connect } from "mongoose";
 import { ConnectDB } from "../libs/db.js";
 import cookieParser from "cookie-parser"
 import messageRouter from "../routes/message.route.js";
@@ -16,7 +15,7 @@ const __dirname = path.resolve();
 
 app.use(cookieParser());
 app.use(cors({
-  origin: "https://chat-application-zmzu.vercel.app/",
+  origin: "http://localhost:5173",
   credentials: true,
 }))
 
