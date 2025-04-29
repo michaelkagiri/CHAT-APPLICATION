@@ -8,7 +8,10 @@ import cors from "cors";
 import { app, server } from "./libs/socket.js";
 import path from "path";
 
+
 dotenv.config();
+
+app.use(express.json());
 
 ConnectDB();
 const __dirname = path.resolve();
@@ -16,12 +19,11 @@ const __dirname = path.resolve();
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
 
-app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("API is running...");
