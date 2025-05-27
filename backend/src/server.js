@@ -8,7 +8,6 @@ import cors from "cors";
 import { app, server } from "./libs/socket.js";
 import path from "path";
 
-
 dotenv.config();
 
 app.use(express.json());
@@ -23,7 +22,6 @@ app.use(
     credentials: true,
   })
 );
-
 
 app.get("/", (req, res) => {
   res.send("API is running...");
