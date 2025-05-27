@@ -35,12 +35,12 @@ const ProfilePage = () => {
           <div className="flex flex-col items-center gap-4">
             <div className="relative">
               <img
-                src={selectedImg || authUser.profilePic || "/avatar.png"}
+                src={selectedImg || authUser.profilePic || "/profile.jpg"}
                 alt="Profile"
                 className="size-32 rounded-full object-cover border-4 "
               />
               <label
-                htmlFor="avatar-upload"
+                htmlFor="profile-upload"
                 className={`
                   absolute bottom-0 right-0 
                   bg-base-content hover:scale-105
@@ -52,7 +52,7 @@ const ProfilePage = () => {
                 <Camera className="w-5 h-5 text-base-200" />
                 <input
                   type="file"
-                  id="avatar-upload"
+                  id="profile-upload"
                   className="hidden"
                   accept="image/*"
                   onChange={handleImageUpload}
