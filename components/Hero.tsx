@@ -1,35 +1,20 @@
-"use client"
-
-import Image from "next/image"
-import CustomButton from "./CustomButton"
-
-
+import React from "react";
 
 const Hero = () => {
-    const handleScroll = () => {
-
-    }
-
-
   return (
-    <div className="hero">
-      <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">
-            find,book or rent a car  -quickly and  easy 
-        </h1>
-         <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking
-          process.
-        </p>
+    <section className={"text-center py-20 px-6 "}>
+      <h2 className={"text-4xl md:text-6xl font-extrabold mb-6"}>Drive Your Dream Car</h2>
+      <p className={"text-lg md:text-xl mb-8"}>
+        Discover, compare and rent top cars with ease from CarHub.
+      </p>
+      <a
+        href="#get-started"
+        className={"bg-black text-white font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"}
+      >
+        Explore Now
+      </a>
+    </section>
+  );
+};
 
-        <CustomButton
-          title="Explore Cars"
-          containerStyles="bg-primary-blue text-white rounded-full mt-10"
-          handleClick={handleScroll}
-        />
-      </div>
-    </div>
-  )
-}
-
-export default Hero
+export default Hero;

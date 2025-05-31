@@ -1,8 +1,15 @@
-import { Hero } from "@/components";
-import Image from "next/image";
+import Hero from "@/components/Hero"
+import Navbar from "@/components/Navbar"
+import CarsPage from "@/page/Cars"
 
-export default function Home() {
+const Home = () => {
   return (
-    <div><Hero/></div>
-  );
+    <div>
+      <Navbar/>
+      <Hero/>
+      <CarsPage/>
+    </div>
+  )
 }
+
+export default Home
