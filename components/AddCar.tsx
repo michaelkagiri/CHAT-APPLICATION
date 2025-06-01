@@ -28,7 +28,7 @@ export default function AddCarForm() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const res = await fetch('/api/cars', {
+    const res = await fetch('/api/cars/index', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, images: [form.image] }),

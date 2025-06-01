@@ -1,12 +1,10 @@
-// app/page.tsx
-"use client"
+'use client';
 
 import { useEffect, useState } from 'react';
-// import { cars } from '@/data/cars';
 import CarCard from '@/components/CarCard';
 
-export default function Content() {
-   const [cars, setCars] = useState([]);
+export default function Home() {
+  const [cars, setCars] = useState([]);
 
   useEffect(() => {
     fetch('/api/cars')
@@ -14,7 +12,7 @@ export default function Content() {
       .then(data => setCars(data));
   }, []);
 
-   return (
+  return (
     <main className="min-h-screen p-6 bg-gray-900 text-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {cars.map((car: any) => <CarCard key={car.id} car={car} />)}
     </main>
