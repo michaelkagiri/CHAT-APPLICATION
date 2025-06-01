@@ -1,13 +1,13 @@
 import Hero from "@/components/Hero"
 import Navbar from "@/components/Navbar"
-import CarsPage from "@/page/Cars"
+import Content from "@/pages/Content"
 
 const Home = () => {
   return (
     <div>
       <Navbar/>
       <Hero/>
-      <CarsPage/>
+      <Content/>
     </div>
   )
 }

@@ -1,0 +1,51 @@
+// data/cars.ts
+export const cars = [
+  {
+    id: 'landcruiser-200-v8-zx',
+    name: 'Toyota Landcruiser 200 series V8 ZX',
+    year: 2017,
+    cc: '4600 CC',
+    fuel: 'Automatic',
+    usage: 'Foreign Used',
+    price: 'KES 9,500,000',
+    stock: 'In-house',
+    images: [
+      '/images/land1.jpg',
+      '/images/land2.jpg',
+      '/images/land3.jpg',
+    ],
+    description: `The Toyota Land Cruiser 200 ZX is the top-tier variant of Toyota’s flagship SUV...`,
+  },
+  {
+    id: 'lexus-lx570',
+    name: 'Lexus LX570',
+    year: 2016,
+    cc: '5700 CC',
+    fuel: 'Automatic',
+    usage: 'Kenyan Used',
+    price: 'KES 8,999,999',
+    stock: 'In-house',
+    images: [
+      '/images/lexus1.jpg',
+      '/images/lexus2.jpg',
+      '/images/lexus3.jpg',
+    ],
+    description: `The Lexus LX570 is a full-sized luxury SUV from Lexus...`,
+  },
+  {
+    id: 'toyota-fortuner',
+    name: 'Toyota Fortuner',
+    year: 2021,
+    cc: '2400 CC',
+    fuel: 'Automatic',
+    usage: 'Foreign Used',
+    price: 'KES 5,300,000',
+    stock: 'In-house',
+    images: [
+      '/images/fortuner1.jpg',
+      '/images/fortuner2.jpg',
+      '/images/fortuner3.jpg',
+    ],
+    description: `6 speed automatic transmission, xenon headlights...`,
+  },
+];
